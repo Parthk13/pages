@@ -22,5 +22,6 @@ ARG APP_PORT=7218
 ENV APP_PORT=${APP_PORT}
 EXPOSE 7218
 
-# Command to run the application
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7218"]
+# # Command to run the application
+# CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7218"]
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port $APP_PORT"]
