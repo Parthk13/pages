@@ -3,7 +3,7 @@ import os
 
 app = FastAPI()
 
-TOKEN = os.environ.get("GA2-2E2F9B", None)
+TOKEN = os.environ.get("GA2_TOKEN_AC80", None)
 
 
 @app.get("/")
